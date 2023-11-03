@@ -3,7 +3,9 @@ import java.util.*;
 public class SummationOfNumbers {
 
     public static void main(String[] args) {
+
         System.out.println(summation(input()));
+        
     }
 
     static int[] input() {
@@ -12,7 +14,6 @@ public class SummationOfNumbers {
         System.out.println("How many number do you want to add?");
         int size = input.nextInt();
         
-
         int[] numArray = new int[size];
 
         System.out.println("Enter " + size + " Numbers:");
@@ -27,7 +28,6 @@ public class SummationOfNumbers {
     }
 
     static int summation(int nums[]) {
-        
         int sum = 0;
 
         for(int num : nums) {
@@ -35,7 +35,6 @@ public class SummationOfNumbers {
         }
         
         return sum;
-
     }
 
 }
